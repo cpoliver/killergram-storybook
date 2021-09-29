@@ -1,8 +1,8 @@
 {
-  "name": "killergram",
+  "name": "killergram-storybook",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://cpoliver.github.io/killergram",
+  "homepage": "http://cpoliver.github.io/killergram-storybook",
   "dependencies": {
     "@chakra-ui/react": "^1.6.7",
     "@emotion/react": "^11.4.1",
@@ -40,7 +40,8 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "eslintConfig": {
     "extends": [
@@ -77,6 +78,7 @@
     "@storybook/node-logger": "^6.3.8",
     "@storybook/preset-create-react-app": "^3.2.0",
     "@storybook/react": "^6.3.8",
+    "@storybook/storybook-deployer": "^2.8.10",
     "chromatic": "^5.10.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-react-app": "^5.2.1",
